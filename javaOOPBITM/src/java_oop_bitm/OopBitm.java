@@ -1,5 +1,7 @@
 package java_oop_bitm;
 
+import java.util.ArrayList;
+
 public class OopBitm {
 
 	public static void main(String[] args) {
@@ -14,6 +16,13 @@ public class OopBitm {
         int[] numbeers= {1};
         
         System.out.println(numbeers[0]);
+        ArrayList<Student> students=new ArrayList<Student>();
+        
+        students.add(new Student("A","B",1));
+        students.add(new Student("E","F",2));
+        students.add(new Student("C","D",3));
+        
+        students.forEach( (n) -> { System.out.println(n.getFirstName()); } );
 	}
 
 }
