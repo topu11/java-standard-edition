@@ -35,6 +35,11 @@ public class CollectionDemo {
            //fruits.clear();
            System.out.println(((ArrayList<String>) fruit1).get(2));
            System.out.println( fruits.get(2));
+           fruits.add("guava");
+           System.out.println(fruits.size());
+           System.out.println("Before removing by index "+fruits);
+           fruits.remove(1);
+           System.out.println("after removing by index "+fruits);
 	}
 
 }
